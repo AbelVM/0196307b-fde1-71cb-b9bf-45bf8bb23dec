@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta property="og:title" content="Hareas" />
+    <meta property="og:description" content="Ya estamos llegando..." />
+    <meta property="og:image" content="https://hareas.com/hareas.png" />
+    <meta property="og:video" content="https://hareas.com/hareas.mp4" />
+    <meta property="og:video:width" content="1280">
+    <meta property="og:video:height" content="720">
+    <meta property="og:url" content="https://hareas.com">
+    <title>Hareas</title>
+    <style>
+        html,
+        .body {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #background-video {
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+            filter: saturate(200%);
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 30px;
+            color: #002a25;
+            background-color: transparent;
+            max-height: 200px;
+        }
+
+        .content img {
+            max-height: 140px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #002a25;
+        }
+    </style>
+</head>
+
+<body>
+    <video id="background-video" autoplay loop muted poster="./hareas.png" width="1280" height="720">
+        <source src="./hareas.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+        <div><img src="./logo.png"></div>
+        <div><a href="mailto:info@hareas.com">info@hareas.com</a></div>
+    </div>
+</body>
+
+</html>
