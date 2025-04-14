@@ -8,7 +8,7 @@
     <meta property="og:title" content="Hareas" />
     <meta property="og:description" content="Ya estamos llegando..." />
     <meta property="og:image" content="https://hareas.com/hareas.png" />
-    <meta property="og:video" content="https://hareas.com/hareas.mp4" />
+    <meta property="og:video" content="https://hareas.com/hareas.webm" />
     <meta property="og:video:width" content="1280">
     <meta property="og:video:height" content="720">
     <meta property="og:url" content="https://hareas.com">
@@ -31,7 +31,7 @@
             top: 0;
             bottom: 0;
             z-index: -1;
-            filter: saturate(200%);
+            filter: saturate(150%);
         }
 
         .content {
@@ -49,19 +49,21 @@
         }
 
         .content img {
-            max-height: 140px;
+            max-height: 10vh;
+            max-width: 33vw;
         }
 
         a {
             text-decoration: none;
-            color: #002a25;
+            color: #ffffff;
         }
     </style>
 </head>
 
 <body>
-    <video id="background-video" autoplay loop muted poster="./hareas.png" width="1280" height="720">
-        <source src="./hareas.mp4" type="video/mp4">
+    <video id="background-video" autoplay loop muted poster="./hareas.png" height="100vh">
+        <source type="video/webm" src="./hareas.webm" />
+        <source type="video/mp4" src="./hareas.mp4" />
     </video>
     <div class="content">
         <div><img src="./logo.png"></div>
